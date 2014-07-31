@@ -1,0 +1,184 @@
+/* ---------------------------------------------------------- */
+/* Float Examples for MakerSquare Front-End Class ----------- */
+/* created by Elyse Holladay @elyseholladay ----------------- */
+/* ---------------------------------------------------------- */
+
+/* Example 05 */
+
+* {border-radius: 4px;
+	font-family: helvetica;}
+
+body{background-color: black;}
+
+
+h1	{
+	margin: 0;
+	margin: 3px, 3px, 3px, 3px;
+	color: #dae130;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.p-question {
+	padding: 20px;
+	margin-bottom: 25px;
+
+}
+.container {
+	background-color: transparent;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Nav Sections */
+.header {
+	background-color: transparent;
+	width: 100%;
+	padding-bottom: 0px;
+	float: left; 
+}
+
+.section-type-e {
+	text-align: center;
+	width: 16.66%;
+	background-color: #6ac8c7;
+	color: white;
+	border: 1px solid black;
+	font-size: 2em;
+	float: left;
+}
+
+.section-type-f {
+	text-align: center;
+	width: 16.66%;
+	background-color: #8dc73f;
+	color: white;
+	border: 1px solid black;
+	font-size: 2em;
+	float: left;
+}
+
+.section-type-h {
+	text-align: center;
+	width: 16.66%;
+	background-color: #dae130;
+	color: white;
+	border: 1px solid black;
+	font-size: 2em;
+	float: left;
+}
+.section-type-r {
+	text-align: center;
+	width: 16.66%;
+	background-color: #faa836;
+	color: white;
+	border: 1px solid black;
+	font-size: 2em;
+	float: left;
+}
+
+.section-type-s {
+	text-align: center;
+	width: 16.66%;
+	background-color: #f04d4d;
+	color: white;
+	border: 1px solid black;
+	font-size: 2em;
+	float: left;
+}
+
+.section-type-n {
+	text-align: center;
+	width: 16.66%;
+	background-color: #6a7376;
+	color: white;
+	border: 1px solid black;
+	font-size: 2em;
+	float: left;
+}
+
+/* end nav sections */
+
+.sidebar {
+	padding: 10px;
+	float: left;
+	text-align: center;
+	height: 20px;
+}
+
+.main-content {
+	padding-top: 6px;
+	background-color: transparent;
+	width: 100%;
+	float: left; 
+}
+/* hint! you have to contain the floated children elements. */
+
+.sub-content-section {
+	text-align: center;
+	background-color: transparent;
+	color: white;
+	float: left;
+	width: 100%;
+	height: 75px;
+	
+}
+.sub-content-question {
+	text-align: center;
+	background-color: transparent;
+	color: white;
+	float: left;
+	width: 100%;
+	height: 150px;
+	
+}
+
+.footer {
+	margin-top: 20px;
+	clear: both;
+	text-align: center;	
+	background-color: transparent;
+	width: 100%;
+	float: left; 
+}
+
+button {
+	border-radius: 4px;
+	background: transparent;
+	color: white;
+	font-family: helvetica;
+}
+
+/* Gradient Line */
+.sexy_line { 
+    margin: 3px, 3px, 3px, 3px;
+    height: 1px;
+    border: 0;
+    background: white;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(black), to(black), color-stop(50%, white));
+}
+
+/* button */ 
+.btn {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 25px;
+  background: #000000;
+  padding: 10px 20px 10px 20px;
+  border: solid #dae130 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #dae130;
+  text-decoration: none;
+}
+
+
+
