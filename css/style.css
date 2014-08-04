@@ -17,6 +17,9 @@ a {
     transition: all 500ms ease;
 }
 
+p 
+
+
 body {
   /*background: black;*/
   opacity: .80;
@@ -27,22 +30,27 @@ a:hover {
 }
 
 .nav-bar {
+  padding: 5px;
   max-height: 50px !important;
   position: fixed;
   width: 100%;
 }
 .section-type {
-  padding: 4px;
+  margin: 2px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  /*padding: 4px;*/
   text-align: center;
-  /*max-width: 88px;*/
-  /*margin: 2px;*/
+  max-width: 80px;
   /*max-height: 50px;*/
   text-align: center;
   color: white;
   border: 1px solid black;
-  font-size: 2em;
+  font-size: 1.5em;
   border-radius: .25em;
 }
+
+
 
 .section-type.economic {
   background-color: #6ac8c7;
@@ -70,6 +78,10 @@ a:hover {
 
 .section-question, .sub-content-question , .footer , .button-container {
   width: 100%;
+  text-align: center;
+}
+
+.social, .press, .email {
   text-align: center;
 }
 
@@ -102,6 +114,31 @@ a:hover {
   color: black;
     background: #dae130;
     text-decoration: none;
+}
+
+
+.contact {
+    /*background: #221c12 url('../images/symbols-bottom.png') no-repeat;
+    padding-top: 570px;*/
+
+    /* TODO add the dark brown background color, and the background image symbols-bottom. Change the background-position so that the bottom of it shows (where the symbols start to fade out). */
+    /* TODO add some top and bottom padding so that the content doesn't overlap the background image. Note how the padding changes the location of the background image. */
+}
+
+.social-links a {
+    padding-right: .5em;
+    opacity: 0.5;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+}
+
+.social-links a:hover {
+      opacity: 1;
+
 }
 
 
