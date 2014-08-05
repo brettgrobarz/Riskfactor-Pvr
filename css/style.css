@@ -28,12 +28,16 @@ body {
 a:hover {
   color: black ;
 }
+   .Nav-Bar:before, .Nav-Bar:after {
+      content: " ";
+      display: table; }
 
-.nav-bar {
+.Nav-Bar {
   padding: 5px;
-  max-height: 50px !important;
-  position: fixed;
-  width: 100%;
+  margin: 0 auto;
+/*  max-height: 50px !important;*/ 
+   /*position: fixed;*/
+  width: 75%;
 }
 .section-type {
   margin: 2px;
