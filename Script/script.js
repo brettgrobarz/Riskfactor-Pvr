@@ -1,48 +1,29 @@
-console.log("Perception Back End Loaded")
+$(function() {
 
-// $(function() {
+   
+    $( document ).on( 'click', '.section-type', function( event ) {
+      // Prevent the default action of the event
+      event.preventDefault();
+      console.log("Perception Back End Loaded");  
 
-//     // TODO #1 Set an event listener to listen for clicks on each menu section
-//     // heading anchor
+      // Assign the id of the clicked element to a variable named id
+      var id = $( this ).attr( 'id' );
+        // console.log(id);
 
+      // Remove the class 'is-active' from all menu item headings
+      $( '.section-type' ).removeClass( 'is-active' );
 
-//     // Note: my menu section headings look like this:
-//     //
-//     // <div class="menu-section">
-//     //   <h3>
-//     //     <a href="#" class="menu-section-item" id="dinner">
-//     //       Dinner
-//     //     </a>
-//     //   </h3>
-//     //   ...
+        console.log( $('.section-type').hasClass( 'is-active'));
 
-//     // I've given all of the anchors the same class so that I can easily target
-//     // all of them with jQuery
+      console.log(this);
+      
+      $( this ).addClass( 'is-active' );
 
-//     $( document ).on( 'click', '.menu-section a', function( event ) {
-//       // Prevent the default action of the event
-//       event.preventDefault();
-//         // console.log(this);
-
-//       // Assign the id of the clicked element to a variable named id
-//       var id = $( this ).attr( 'id' );
-//         // console.log(id);
-
-//       // Remove the class 'is-active' from all menu item headings
-//       $( '.menu-section a' ).removeClass( 'is-active' );
-//         // console.log( $('.menu-section-item').hasClass( 'is-active'));
-
-//       // Add 'is-active' to this specific action that was clicked. is-active
-//       // provides the visual cue for what's active via CSS
-//       // console.log(this);
-//       // this.find the parent of this with the class .menu-section.addClass
-//       $( this ).addClass( 'is-active' );
-
-//       // Once you're started with TODO #2, call the getMenu function here,
-//       // passing id as the argument
-//       getMenu( id );
-//     });
-
+      // Once you're started with TODO #2, call the getMenu function here,
+      // passing id as the argument
+      // getMenu( id );
+    });
+  }
 
 
 //     // TODO #2 Create a function, getMenu, to get the menu for a course
@@ -104,4 +85,3 @@ console.log("Perception Back End Loaded")
 
 //     getMenu('dinner');
 
-// });
