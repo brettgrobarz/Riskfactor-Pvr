@@ -8,14 +8,10 @@
 /*header colors and sizing*/
 /*test*/
 a {
-  color:white;
+  color:gray;
   text-decoration: none;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
 }
+
 
 p 
 
@@ -28,16 +24,18 @@ body {
 a:hover {
   color: black ;
 }
-   .Nav-Bar:before, .Nav-Bar:after {
+
+
+.Nav-Bar:before, .Nav-Bar:after {
       content: " ";
       display: table; }
 
 .Nav-Bar {
-  padding: 5px;
+  padding: 10px;
   margin: 0 auto;
   /*  max-height: 50px !important;*/ 
    /*position: fixed;*/
-  width: 75%;
+  width: 50%;
 }
 .section-type {
   margin: 2px;
