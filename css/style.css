@@ -33,17 +33,14 @@ a:hover {
 .Nav-Bar {
   padding: 10px;
   margin: 0 auto;
-  /*  max-height: 50px !important;*/ 
-   /*position: fixed;*/
-  width: 50%;
+  width: 85%;
 }
+
 .section-type {
   margin: 2px;
   margin-bottom: 5px;
   margin-top: 10px;
-  /*padding: 4px;*/
   max-width: 80px;
-  /*max-height: 50px;*/
   text-align: center;
   color: white;
   border: 1px solid black;
