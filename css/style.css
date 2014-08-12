@@ -26,7 +26,7 @@ a:hover {
 }
 
 
-.Nav-Bar:before, .Nav-Bar:after {
+.Nav-Bar, .Nav-Bar:before, .Nav-Bar:after {
       content: " ";
       display: table; }
 
