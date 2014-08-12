@@ -28,19 +28,21 @@ a:hover {
 
 .Nav-Bar, .Nav-Bar:before, .Nav-Bar:after {
       content: " ";
-      display: table; }
+      display: table; 
+}
+
 
 .Nav-Bar {
   padding: 10px;
   margin: 0 auto;
-  width: 85%;
+  width: 70%;
 }
 
 .section-type {
   margin: 2px;
   margin-bottom: 5px;
   margin-top: 10px;
-  max-width: 80px;
+  min-width: 48px;
   text-align: center;
   color: white;
   border: 1px solid black;
