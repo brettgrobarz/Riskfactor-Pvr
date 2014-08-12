@@ -1,6 +1,5 @@
-$(function() {
+$(document).ready(function() {
 
-   
     $( document ).on( 'click', '.section-type', function( event ) {
       // Prevent the default action of the event
       event.preventDefault();
@@ -13,7 +12,7 @@ $(function() {
       // Remove the class 'is-active' from all menu item headings
       $( '.section-type' ).removeClass( 'is-active' );
 
-        console.log( $('.section-type').hasClass( 'is-active'));
+      console.log( $('.section-type').hasClass( 'is-active'));
 
       console.log(this);
       
@@ -23,7 +22,7 @@ $(function() {
       // passing id as the argument
       // getMenu( id );
     });
-  }
+  });
 
 
 //     // TODO #2 Create a function, getMenu, to get the menu for a course
