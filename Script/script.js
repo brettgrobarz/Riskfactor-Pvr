@@ -8,7 +8,7 @@ $(document).ready(function() {
 
       var id = $( this ).attr( 'id' );
       // this line removes anything that is on the H1
-      $(".section-question h1").remove;
+      
 
       // this line adds the section question to the H1 
       $(".section-question h1").append(id);
