@@ -11,12 +11,8 @@ $(document).ready(function() {
        $( '.section-type a' ).removeClass( 'is-active' );
       // Add the class is-active to the clicked nav secion
       $( this ).addClass( 'is-active' );
-      
-      // this line removes anything that is on the H1
-
-
-      // this line adds the section question to the H1 
-      $(".section-question h1").append(id);
+      // this line toggles the selected section into the H1 
+      $('.section-question h1').replaceWith('<h1>' + id + '</h1>');
 
       
      
