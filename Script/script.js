@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-    $( document ).on( 'click', function( event ) {
+    $( document ).on( 'click', '.section-type a', function( event ) {
       event.preventDefault();
         
       // Assign the id of the clicked element to a variable named id, so that it can differentiate between question sections
       var id = $( this ).attr( 'id' );
-          console.log(this);
+          console.log(id);
 
 
 
