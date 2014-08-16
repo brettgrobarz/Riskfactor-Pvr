@@ -5,7 +5,7 @@ $(document).ready(function() {
         
       // Assign the id of the clicked element to a variable named id, so that it can differentiate between question sections
       var id = $( this ).attr( 'id' );
-          console.log(id);
+          console.log(this);
 
 
 
@@ -36,27 +36,27 @@ $(document).ready(function() {
             // Create your for loop here
             // HINT: the string should look like '<li>' + friends[x] + "</li>" + ....
 
-            var runQuestion = function(){ 
-                  for(i=0; i < friends.length; i++) {
-                  list += '<li>'+sconomic[i]+ '</li>'
-            };
+                var runQuestion = function(){ 
+                      for(i=0; i < friends.length; i++) {
+                      list += '<li>'+sconomic[i]+ '</li>'
+                };
                 
 
-            var changeQuestion = function(){
-                friends.push(friendName);
-            };
+                var changeQuestion = function(){
+                    friends.push(friendName);
+                };
 
 
 
-            list = list + '</li>'
+                  list = list + '</li>'
 
 
-            $("body").append(list);
-            
+                  $("body").append(list);
+                  
 
-             $("#addFriend").on('click', function(e) {
-                e.preventDefault();
-                  var createList = $("#friendName").val(); 
+                   $("#addFriend").on('click', function(e) {
+                      e.preventDefault();
+                        var createList = $("#friendName").val(); 
 });
 };
 });
