@@ -1,86 +1,72 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $( document ).on( 'click', '.section-type', function( event ) {
-      // Prevent the default action of the event
-      event.preventDefault();
-      console.log("Perception Back End Loaded");  
+//     $( document ).on( 'click', '.section-type', function( event ) {
+//       // Prevent the default action of the event
+//       event.preventDefault();
+        
+//       // Assign the id of the clicked element to a variable named id
+//       var id = $( this ).attr( 'id' );
+//         // console.log(id);
 
-      // Assign the id of the clicked element to a variable named id
-      var id = $( this ).attr( 'id' );
-        // console.log(id);
+//       // Remove the class 'is-active' from all menu item headings
+//       $( '.section-type' ).removeClass( 'is-active' );
 
-      // Remove the class 'is-active' from all menu item headings
-      $( '.section-type' ).removeClass( 'is-active' );
+//       console.log( $('.section-type').hasClass( 'is-active'));
 
-      console.log( $('.section-type').hasClass( 'is-active'));
+//       $( this ).addClass( 'is-active' );
 
-      console.log(this);
+//       // Once you're started with TODO #2, call the getMenu function here,
+//       // passing id as the argument
+//       // getMenu( id );
+//     });
+//   });
+
+// ethical questions example array 
+
+var ethical = [['Are you at risk of not getting call back from a job interview based on your overall attractivness?', 'Percent chance an attractive person will receive a callback after an interview 72.32%'],['If you knew would not get caught cheating on your significant other would you do it?', 'Men 74% Women 68%']];
+
+// financial questions example array 
+
+var financial = [['Are you more likely to be homeless as a man?', 'Men are 44% more likely to be homeless'],['Do you typically have enough money on hand to cover one mortgage/rent payment or to purchase one month of groceries?', 'According to Healthways.com, 64% of Americans don’t have enough cash on hand to cover one mortgage payment or to purchase one month of groceries for their families.']];
+
+// health questions example array 
+
+var health = [['Do you think males or femals have a higher risk of dying from heat related causes?', '2013: 63% of all heat related fatalities were men. (Men 70-79 are the highest risk)'],['Do you feel it is safe to canoe in Town Lake?', 'Your risk of injuy is roughly 1/10,000']];
+
+// recreation questions example array 
+
+var recreation = [['Do you think you think it is safe to ride a bike in Austin?', 'On Average, 6 people per year die in Austin on their Bikes'],['Do you think it iss safer to drive a motorcycle during the day or at night? ', '60% of motorcycle accidents occur during the daytime']];
+
+// saftey questions example array 
+
+var saftey = [['Is it risky to chew on a ball point pen?', 'On average, 100 people choke to death on ballpoint pens every year'],['Do you think sleeping on a pillow is dangerous?', 'More than 6,000 people with pillow-related injuries check into U.S. emergency rooms every year.']];
+
+
+
+var questionPopulate = "<ul>"
+
+      // Create your for loop here
+      // HINT: the string should look like '<li>' + friends[x] + "</li>" + ....
+
+      var runQuestion = function(){ 
+            for(i=0; i < friends.length; i++) {
+            list += '<li>'+sconomic[i]+ '</li>'
+      };
+          
+
+      var changeQuestion = function(){
+          friends.push(friendName);
+      };
+
+
+
+      list = list + '</li>'
+
+
+      $("body").append(list);
       
-      $( this ).addClass( 'is-active' );
 
-      // Once you're started with TODO #2, call the getMenu function here,
-      // passing id as the argument
-      // getMenu( id );
-    });
-  });
-
-
-//     // TODO #2 Create a function, getMenu, to get the menu for a course
-
-//     // There are menus available for each course:
-//     // - http://mksrestaurantapi.herokuapp.com/menu-breakfast.json
-//     // - http://mksrestaurantapi.herokuapp.com/menu-lunch.json
-//     // - http://mksrestaurantapi.herokuapp.com/menu-dinner.json
-//     // - http://mksrestaurantapi.herokuapp.com/menu-dessert.json
-//     // - http://mksrestaurantapi.herokuapp.com/menu-cocktails.json
-//     // - http://mksrestaurantapi.herokuapp.com/menu-wine.json
-
-//     // By setting a parameter of `course`, we can pass the course we want the
-//     // menu for into this function
-
-//     function getMenu( course ) {
-//       // Use `$.getJSON` to get the menu for whatever menu heading was clicked
-//       $.getJSON( 'http://mksrestaurantapi.herokuapp.com/menu-' + course + '.json', function( json ) {
-//         // console.log("what menu should I be seeing", course);
-//         populateMenu( json );
-//         // Once you're started with TODO #3, call the populateMenu function here
-//         // and pass json as the argument
-//       });
-//     }
-
-
-
-//     // TODO #3 Create a function, populateMenu, to add a menu to the DOM
-
-//     function populateMenu( json ) {
-//       html = '';
-
-//       for( var i = 0; i < json.length; i++ ){
-//         html += '<div class="menu-group columns small-12 medium-4">';
-//         html += '<h4>' + json[i].section + '</h4>';
-
-//         for( var j = 0; j < json[i].content.length; j++ ) {
-//           html += '<div class="menu-item">';
-//           html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
-//               if (json[i].content[j].ingredients != undefined) html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';
-//           html += '<div class="menu-item-price">' + json[i].content[j].price + '</div>';
-//           html += '</div>';
-//         }
-
-//         html += '</div>';
-
-
-//       }
-
-//       // Use `.html` to replace the contents of `.menu-section-content`
-//       $( '.menu-section-content' ).html( html );
-
-//     }
-
-
-
-//     // TODO #4 Call getMenu with a menu of your choice and set that menu's
-//     // header to active so that a menu is loaded with the page by default
-
-//     getMenu('dinner');
-
+       $("#addFriend").on('click', function(e) {
+          e.preventDefault();
+            var createList = $("#friendName").val(); 
+});
