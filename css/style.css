@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+ a.is-active {
+  color:black !important;
+}
+
 
 body {
   /*background: black;*/
@@ -76,10 +80,6 @@ a:hover {
 .section-question, .sub-content-question , .footer , .button-container {
   width: 100%;
   text-align: center;
-}
-
-.is-active a {
-  color:black;
 }
 
 .social, .press, .email {

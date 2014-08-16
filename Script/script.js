@@ -7,16 +7,23 @@ $(document).ready(function() {
       event.preventDefault();
 
       var id = $( this ).attr( 'id' );
-      // this line removes anything that is on the H1
+      // Removing the class is-active from nav section
+       $( '.section-type a' ).removeClass( 'is-active' );
+      // Add the class is-active to the clicked nav secion
+      $( this ).addClass( 'is-active' );
       
+      // this line removes anything that is on the H1
+
 
       // this line adds the section question to the H1 
       $(".section-question h1").append(id);
+
+      
      
       
       
 
-          console.log(id);
+    
 
 
 
