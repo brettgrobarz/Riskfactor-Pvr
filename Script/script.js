@@ -16,14 +16,8 @@ $(document).ready(function() {
 
       console.log(id);
 
-// javascript to populate and loop through questions on each page
 
-  function questionPopulate (questions){
-
-          for (var i = id.length - 1; i >= 0; i--) {
-            id[i]};
-
-            // ethical questions example array 
+// ethical questions example array 
 
           var ethicalArray = [['Are you at risk of not getting call back from a job interview based on your overall attractivness?', 'Percent chance an attractive person will receive a callback after an interview 72.32%'],['If you knew would not get caught cheating on your significant other would you do it?', 'Men 74% Women 68%']];
 
@@ -43,11 +37,18 @@ $(document).ready(function() {
 
           var safteyArray = [['Is it risky to chew on a ball point pen?', 'On average, 100 people choke to death on ballpoint pens every year'],['Do you think sleeping on a pillow is dangerous?', 'More than 6,000 people with pillow-related injuries check into U.S. emergency rooms every year.']];
 
+// function to populate and loop through questions on each page
 
-          if (id="Ethical") {
-              $(".p-question").replaceWith((ethicalArray[0]));
+  function questionPopulate (questions){
 
-          };
+          // for (var i = id+'Array'.length - 1; i >= 0; i--) {
+          //   id+'Array'[i]
+          // };
+
+          // if (id="Ethical") {
+        // $(".p-question").replaceWith(id);
+
+          // };
 
 
 
