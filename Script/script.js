@@ -83,6 +83,10 @@ $(document).ready(function() {
       $( this ).addClass( 'is-active' );
       // this line toggles the selected section into the H1 
       $('.section-question h1').replaceWith('<h1>' + id + '</h1>');
+      // Inserting Buttons into HTML
+      $('.button-container').replaceWith('<a class="button">' + 'Yes</a>' +
+             '<a class="button">' + 'No</a>');
+
 
       // Traversing Arrays
       // console.log(questions[id]);
@@ -90,10 +94,10 @@ $(document).ready(function() {
       // console.log(questions[id][0][0]);
 
       // Traversing Objects
-      console.log('q: ' + questions.Ethical[0].question);
-      console.log('a: ' + questions.Ethical[0].answer);
-      console.log('q: ' + questions.Ethical[1].question);
-      console.log('a: ' + questions.Ethical[1].answer);
+      // console.log('q: ' + questions.Ethical[0].question);
+      // console.log('a: ' + questions.Ethical[0].answer);
+      // console.log('q: ' + questions.Ethical[1].question);
+      // console.log('a: ' + questions.Ethical[1].answer);
 
 // function to populate and loop through questions on each page
 
@@ -106,15 +110,26 @@ $(document).ready(function() {
 
       console.log(currentQ);
 
+
+
+
+      $( document ).on( 'click', '.button', function( event ) {
+      event.preventDefault();
+
+       $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].answer + '</p>');
+
+      currentQ += 1;
+
+
 // '<div class="row">
 //             <div class="button-container column large-6 column medium-6">
-//               <a class="button">Men</a>
-//               <a class="button">Women</a>
+//               <a class="button">Yes</a>
+//               <a class="button">No</a>
 //             </div>'
 
 
 
-
+});
 });
 });
     
