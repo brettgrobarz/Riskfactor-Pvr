@@ -3,16 +3,16 @@ $(document).ready(function() {
   var questions = {
 // ethical questions example array 
 
-    Ethical: [
-      {
-        question: 'Are you at risk of not getting call back from a job interview based on your overall attractivness?', 
-        answer: 'Percent chance an attractive person will receive a callback after an interview 72.32%'
-      },
-      {
-        question: 'If you knew would not get caught cheating on your significant other would you do it?', 
-        answer: 'Men 74% Women 68%'
-      }
-    ],
+      Ethical: [
+        {
+          question: 'Are you at risk of not getting call back from a job interview based on your overall attractivness?', 
+          answer: 'Percent chance an attractive person will receive a callback after an interview 72.32%'
+        },
+        {
+          question: 'If you knew would not get caught cheating on your significant other would you do it?', 
+          answer: 'Men 74% Women 68%'
+        }
+      ],
 
 // financial questions example array 
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
 // health questions example array 
 
     Health: [
-          }
+          {
             question: 'Do you think men have a higher risk of dying from heat related causes?', 
             answer:'2013: 63% of all heat related fatalities were men. (Men 70-79 are the highest risk)'
           },
@@ -44,11 +44,11 @@ $(document).ready(function() {
 // recreation questions example array 
 
     Recreation: [
-          }
+          {
             question: 'Do you think you think it is safe to ride a bike in Austin?',
             answer: 'On Average, 6 people per year die in Austin on their Bikes'
-          {,
           },
+          {
             question: 'Do you think it iss safer to drive a motorcycle during the day than at night? ',
             answer: '60% of motorcycle accidents occur during the daytime'
           }
@@ -57,7 +57,7 @@ $(document).ready(function() {
 // saftey questions example array 
 
     Saftey: [
-          }
+          {
             question: 'Is it risky to chew on a ball point pen?',
             answer: 'On average, 100 people choke to death on ballpoint pens every year'
           },
