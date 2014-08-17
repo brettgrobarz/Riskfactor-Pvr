@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var questions = {
-        // ethical questions example array 
+// ethical questions example array 
 
     Ethical: [
       {
@@ -17,25 +17,54 @@ $(document).ready(function() {
 // financial questions example array 
 
     Financial: [
-      ['Are you more likely to be homeless as a man?', 'Men are 44% more likely to be homeless'],['Do you typically have enough money on hand to cover one mortgage/rent payment or to purchase one month of groceries?', 'According to Healthways.com, 64% of Americans don’t have enough cash on hand to cover one mortgage payment or to purchase one month of groceries for their families.']
-    ],
+          {
+            question: 'Are you more likely to be homeless as a man?', 
+            answer: 'Men are 44% more likely to be homeless'
+          },
+          {
+            question: 'Do you typically have enough money on hand to cover one mortgage/rent payment or to purchase one month of groceries?', 
+            answer: 'According to Healthways.com, 64% of Americans don’t have enough cash on hand to cover one mortgage payment or to purchase one month of groceries for their families.'
+          }
+        ],
+
 
 // health questions example array 
 
     Health: [
-      ['Do you think males or femals have a higher risk of dying from heat related causes?', '2013: 63% of all heat related fatalities were men. (Men 70-79 are the highest risk)'],['Do you feel it is safe to canoe in Town Lake?', 'Your risk of injuy is roughly 1/10,000']
+          }
+            question: 'Do you think men have a higher risk of dying from heat related causes?', 
+            answer:'2013: 63% of all heat related fatalities were men. (Men 70-79 are the highest risk)'
+          },
+          {
+            question: 'Do you feel it is safe to canoe in Town Lake?', 
+            answer: 'Your risk of injuy is roughly 1/10,000'
+          }
     ],
 
 // recreation questions example array 
 
     Recreation: [
-      ['Do you think you think it is safe to ride a bike in Austin?', 'On Average, 6 people per year die in Austin on their Bikes'],['Do you think it iss safer to drive a motorcycle during the day or at night? ', '60% of motorcycle accidents occur during the daytime']
+          }
+            question: 'Do you think you think it is safe to ride a bike in Austin?',
+            answer: 'On Average, 6 people per year die in Austin on their Bikes'
+          {,
+          },
+            question: 'Do you think it iss safer to drive a motorcycle during the day than at night? ',
+            answer: '60% of motorcycle accidents occur during the daytime'
+          }
     ],
 
 // saftey questions example array 
 
     Saftey: [
-      ['Is it risky to chew on a ball point pen?', 'On average, 100 people choke to death on ballpoint pens every year'],['Do you think sleeping on a pillow is dangerous?', 'More than 6,000 people with pillow-related injuries check into U.S. emergency rooms every year.']
+          }
+            question: 'Is it risky to chew on a ball point pen?',
+            answer: 'On average, 100 people choke to death on ballpoint pens every year'
+          },
+          {
+            question: 'Do you think sleeping on a pillow is dangerous?', 
+            answer: 'More than 6,000 people with pillow-related injuries check into U.S. emergency rooms every year.'
+          }
     ]
   };
 
