@@ -1106,6 +1106,7 @@ button, .button {
   background-color: #008cba;
   border-color: #007095;
   color: white;
+  margin: 5px;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
     background-color: #007095; }

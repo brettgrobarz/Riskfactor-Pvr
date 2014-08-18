@@ -85,7 +85,7 @@ $(document).ready(function() {
       $('.section-question h1').replaceWith('<h1>' + id + '</h1>');
       // Inserting Buttons into HTML
       $('.button-container').replaceWith('<a class="button">' + 'Yes</a>' +
-             '<a class="button">' + 'No</a>');
+             '<a class="button">' + 'No</a>' + '<a class="button-next"> Next' + '</a>');
 
 
       // Traversing Arrays
@@ -113,7 +113,7 @@ $(document).ready(function() {
 
 
 
-      $( document ).on( 'click', '.button', function( event ) {
+      $( document ).on( 'click', '.button-next', function( event ) {
       event.preventDefault();
 
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].answer + '</p>');
