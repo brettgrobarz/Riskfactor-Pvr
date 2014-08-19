@@ -119,7 +119,7 @@ $(document).ready(function() {
 
        // $('#buttons').replaceWith("")
 
-       $('.p-next').replaceWith('<a class="buttonNext" style="margin: 10px">Next</a></center>');
+       $('.p-next').replaceWith('</div class="row"><a class="buttonNext" style="margin: 10px">Next Question</a></center></div>');
 
 
             currentQ += 1;

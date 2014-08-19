@@ -1083,7 +1083,7 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
-button, .button, {
+button, .button, .buttonNext, {
   border-radius: .25em;
   border-style: solid;
   border-width: 0px;
