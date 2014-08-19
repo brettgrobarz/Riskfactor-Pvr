@@ -69,7 +69,7 @@ $(document).ready(function() {
   };
 
   var currentQ = 0;
-  var secondQ = 1;
+  
 
 
 // Assign the id of the clicked element to a variable named id, so that it can differentiate between question sections
@@ -85,7 +85,7 @@ $(document).ready(function() {
       // this line toggles the selected section into the H1 
       $('.section-question h1').replaceWith('<h1>' + id + '</h1>');
       // Inserting Buttons into HTML
-      $('.button-container').replaceWith('<center><a class="button">Yes</a>' + '<a class="button">No</a>' + '<a id="nextButton" class="button">Next</a></center>');
+      $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px">No</a>' + '<a id="nextButton" class="button" style="margin: 3px">Next</a></center>');
 
 
       // Traversing Arrays
@@ -115,7 +115,7 @@ $(document).ready(function() {
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].answer + '</p>');
 
       currentQ += 1;
-
+      console.log(currentQ);
 
       // $( document ).on( 'click', '#nextButton.button', function( event ) {
       // event.preventDefault();
