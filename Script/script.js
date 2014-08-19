@@ -102,8 +102,6 @@ $(document).ready(function() {
 
       $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].question + '</p>');
 
-      currentQ += 1;
-
       console.log(currentQ);
 
 
@@ -115,6 +113,7 @@ $(document).ready(function() {
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].answer + '</p>');
 
       currentQ += 1;
+
       console.log(currentQ);
 
       // $( document ).on( 'click', '#nextButton.button', function( event ) {
