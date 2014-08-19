@@ -94,20 +94,7 @@ $(document).ready(function() {
 
         var currentQ = 0;
 
-      // function ReloadPage() {
-
-      //     location.reload();
-      // };
-
-      //   $(document).ready(function() {
-
-      //   $('.section-type a').click(function() {
-
-      //        setTimeout("ReloadPage()", 100);
-
-      //  });
-
-// });
+     
 
 
       // Traversing Arrays
