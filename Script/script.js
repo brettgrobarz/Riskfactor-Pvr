@@ -135,7 +135,7 @@ $(document).ready(function() {
 
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].question + '</p>');
 
-       $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px">No</a>');
+       $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px;">No</a>');
 
              currentQ += -1;
              currentQ += 1;
