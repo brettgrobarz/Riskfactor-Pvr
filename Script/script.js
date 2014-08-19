@@ -84,8 +84,7 @@ $(document).ready(function() {
       // this line toggles the selected section into the H1 
       $('.section-question h1').replaceWith('<h1>' + id + '</h1>');
       // Inserting Buttons into HTML
-      $('.button-container').replaceWith('<a class="button">' + 'Yes</a>' +
-             '<a class="button">' + 'No</a>' + '<a class="button-next"> Next' + '</a>');
+      $('.button-container').replaceWith('<center><a class="button">Yes</a>' + '<a class="button">No</a>' + '<a class="button">Next</a></center>');
 
 
       // Traversing Arrays
@@ -99,10 +98,6 @@ $(document).ready(function() {
       // console.log('q: ' + questions.Ethical[1].question);
       // console.log('a: ' + questions.Ethical[1].answer);
 
-// function to populate and loop through questions on each page
-
-
-// create an if then function that checks if the ID is equal to a certain id. if it is, then we want to call that array and loop through it 
 
       $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].question + '</p>');
 
@@ -113,22 +108,26 @@ $(document).ready(function() {
 
 
 
-      $( document ).on( 'click', '.button-next', function( event ) {
+      $( document ).on( 'click', '.button', function( event ) {
       event.preventDefault();
 
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].answer + '</p>');
 
       currentQ += 1;
+      
+
+//       $( document ).on( 'click', '.button', function( event ) {
+//       event.preventDefault();
+
+//        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].answer + '</p>');
+
+//       currentQ += 1;
 
 
-// '<div class="row">
-//             <div class="button-container column large-6 column medium-6">
-//               <a class="button">Yes</a>
-//               <a class="button">No</a>
-//             </div>'
 
 
 
+// });
 });
 });
 });
