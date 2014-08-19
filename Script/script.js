@@ -70,6 +70,11 @@ $(document).ready(function() {
 
   var currentQ = 0;
   
+  function ReloadPage() {
+
+      location.reload();
+      };
+
 
 
 // Assign the id of the clicked element to a variable named id, so that it can differentiate between question sections
@@ -86,6 +91,23 @@ $(document).ready(function() {
       $('.section-question h1').replaceWith('<h1>' + id + '</h1>');
       // Inserting Buttons into HTML
       $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px">No</a>');
+
+        var currentQ = 0;
+
+      // function ReloadPage() {
+
+      //     location.reload();
+      // };
+      
+      //   $(document).ready(function() {
+
+      //   $('.section-type a').click(function() {
+
+      //        setTimeout("ReloadPage()", 100);
+
+      //  });
+
+// });
 
 
       // Traversing Arrays
