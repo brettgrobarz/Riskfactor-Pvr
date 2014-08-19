@@ -85,7 +85,7 @@ $(document).ready(function() {
       // this line toggles the selected section into the H1 
       $('.section-question h1').replaceWith('<h1>' + id + '</h1>');
       // Inserting Buttons into HTML
-      $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px">No</a>' + '<a id="next" class="button" style="margin: 3px">Next</a></center>');
+      $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px">No</a>' +'<div></div>' + '<a class="buttonNext" style="margin: 3px">Next</a></center>');
 
 
       // Traversing Arrays
@@ -119,7 +119,7 @@ $(document).ready(function() {
 
       //This should populate the second question into the div 
 
-       $( document ).on( 'click', '#next.button', function( event ) {
+       $( document ).on( 'click', '.buttonNext', function( event ) {
       event.preventDefault();
 
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].question + '</p>');
