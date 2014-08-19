@@ -23,7 +23,7 @@ $(document).ready(function() {
           },
           {
             question: 'Do you typically have enough money on hand to cover one mortgage/rent payment or to purchase one month of groceries?', 
-            answer: 'According to Healthways.com, 64% of Americans don’t have enough cash on hand to cover one mortgage payment or to purchase one month of groceries for their families.'
+            answer: 'According to Healthways.com, 64% of Americans do not have enough cash on hand to cover one mortgage payment or to purchase one month of groceries for their families.'
           }
         ],
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
             answer: 'On Average, 6 people per year die in Austin on their Bikes'
           },
           {
-            question: 'Do you think it iss safer to drive a motorcycle during the day than at night? ',
+            question: 'Do you think it is safer to drive a motorcycle during the day than at night? ',
             answer: '60% of motorcycle accidents occur during the daytime'
           }
     ],
@@ -98,7 +98,7 @@ $(document).ready(function() {
 
       //     location.reload();
       // };
-      
+
       //   $(document).ready(function() {
 
       //   $('.section-type a').click(function() {
@@ -135,9 +135,9 @@ $(document).ready(function() {
 
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].answer + '</p>');
 
-       $('.p-next').replaceWith('<a class="buttonNext" style="margin: 10px">Next</a></center>');
+       // $('#buttons').replaceWith("")
 
-       $('.button-container').empty();
+       $('.p-next').replaceWith('<a class="buttonNext" style="margin: 10px">Next</a></center>');
 
 
       currentQ += 1;
@@ -152,6 +152,8 @@ $(document).ready(function() {
        $('.next').replaceWith("")
 
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].question + '</p>');
+
+       $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px">No</a>');
 
        currentQ += -1;
        currentQ += 1;
