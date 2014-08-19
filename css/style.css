@@ -50,10 +50,11 @@ a:hover {
 }
 
 .section-type {
+  padding: 0;
   margin: 2px;
   margin-bottom: 5px;
   margin-top: 10px;
-  min-width: 48px;
+  min-width: 36px;
   text-align: center;
   color: white;
   border: 1px solid black;
