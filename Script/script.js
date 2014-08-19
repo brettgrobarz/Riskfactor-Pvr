@@ -107,7 +107,7 @@ $(document).ready(function() {
 
 
 
-      //This populates the answer to the first question
+      //This populates the answer to the first question, and the next button
       $( document ).on( 'click', '.button', function( event ) {
       event.preventDefault();
 
@@ -122,7 +122,7 @@ $(document).ready(function() {
 
       console.log(currentQ);
 
-      //This should populate the second question into the div 
+      //This should populate the second question into the div when clickin g the next button, and removes the next button
 
        $( document ).on( 'click', '.buttonNext', function( event ) {
       event.preventDefault();
@@ -132,6 +132,7 @@ $(document).ready(function() {
        $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].question + '</p>');
 
        currentQ += -1;
+       currentQ += 1;
 
       console.log(currentQ);
 
