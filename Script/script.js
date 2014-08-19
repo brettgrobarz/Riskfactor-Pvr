@@ -70,12 +70,7 @@ $(document).ready(function() {
 
   var currentQ = 0;
   
-  function ReloadPage() {
-
-      location.reload();
-      };
-
-
+ 
 
 // Assign the id of the clicked element to a variable named id, so that it can differentiate between question sections
 
@@ -94,7 +89,7 @@ $(document).ready(function() {
 
         var currentQ = 0;
 
-     
+
 
 
       // Traversing Arrays
@@ -112,7 +107,7 @@ $(document).ready(function() {
       //This populates the first question
       $('.p-question').replaceWith('<p class="p-question">' + questions[id][currentQ].question + '</p>');
 
-      console.log(currentQ);
+            console.log(currentQ);
 
 
 
@@ -127,9 +122,9 @@ $(document).ready(function() {
        $('.p-next').replaceWith('<a class="buttonNext" style="margin: 10px">Next</a></center>');
 
 
-      currentQ += 1;
+            currentQ += 1;
 
-      console.log(currentQ);
+            console.log(currentQ);
 
       //This should populate the second question into the div when clickin g the next button, and removes the next button
 
@@ -142,17 +137,21 @@ $(document).ready(function() {
 
        $('.button-container').replaceWith('<center><a class="button" style="margin: 3px">Yes</a>' + '<a class="button" style="margin: 3px">No</a>');
 
-       currentQ += -1;
-       currentQ += 1;
+             currentQ += -1;
+             currentQ += 1;
+
+        $('.section-type a').click(function() {
+       location.reload(false);
+       
 
       console.log(currentQ);
 
 
 
 
-
-});
-});
-});
+       });
+      });
+    });
+  });
 });
     
